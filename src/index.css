@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base{
+        *{
+            margin :0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        body{
+            color:#000;
+            background-color: #fff;
+            font-family: "Inter", sans-serif;
+            
+        }
+
+        .merriweather{
+            font-family: 'Merriweather', serif;
+        }
+
+        html{
+            scroll-behavior: smooth;
+        }
+    
+        @layer utilities {
+            .text-gradient {
+                background: linear-gradient(90deg,rgba(0, 0, 0, 1) 25%, rgba(230, 227, 227, 1) 62%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .text-gradient2 {
+                background: linear-gradient(90deg,rgba(0, 0, 0, 1) 27%, rgba(230, 227, 227, 1) 58%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+        }
+}
