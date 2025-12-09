@@ -1,6 +1,6 @@
 import NavBar from "./components/Navbar/NavBar"
 import Hero from "./components/hero"
-import  Intro from "./components/intro"
+import Intro from "./components/Intro"
 import TopProducts from "./components/TopProducts"
 import Services from "./components/Services"
 import Footer from "./components/footer"
