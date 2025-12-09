@@ -99,7 +99,7 @@ function TopProducts() {
 
                         <p className="text-gray-500 mt-2 text-sm">{item.description}</p>
 
-                        <div className="mt-2 font-semibold">⭐ {item.ratting}</div>
+                        <div className="mt-2 font-semibold text-black">⭐ {item.ratting}</div>
 
                         <button className="bg-[#868f89] font-semibold rounded-lg px-6 py-2 text-black mt-4 w-full hover:bg-gray-800 transition-all">
                             Comprar agora
