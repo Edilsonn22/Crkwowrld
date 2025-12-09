@@ -4,7 +4,7 @@ function Hero() {
     return (
         <section className=" relative h-screen overflow-hidden bg-black">
             <div className="relative inset-0 top bottom-0 z-0 w-full h-full">
-                <img src="../public/img/Project crk.png" alt="Hero Image" className="absolute w-full h-full object-cover opacity-90 brightness-90" />
+                <img src="/img/Project crk.png" alt="Hero Image" className="absolute w-full h-full object-cover opacity-90 brightness-90" />
                 <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90">
                 </div>
 
