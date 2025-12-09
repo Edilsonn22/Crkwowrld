@@ -34,22 +34,29 @@ const ServicesData = [
 function services() {
     return (
         <div>
-            <div>
-                <div className="flex items-center justify-center">
-                    <h2 className="text-2xl font-bold text-center center justify-center ">Nossos Serviços</h2>
+            <div className="px-4 mb-10">
+                {/* Título */}
+                <div className="flex justify-center mb-6">
+                    <h2 className="text-xl sm:text-2xl md:text-2xl font-bold text-center text-black">
+                        Nossos Serviços
+                    </h2>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4 mb-5">
+
+                {/* Grid de serviços */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {ServicesData.map((service) => (
-                        <div key={service.id} className="flex items-start gap-3">
-                            <div className="text-4xl text-primary flex-shrink-0">
+                        <div key={service.id} className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                            {/* Ícone */}
+                            <div className="text-3xl sm:text-4xl text-primary">
                                 {service.icon}
                             </div>
 
+                            {/* Texto */}
                             <div className="flex flex-col">
-                                <h3 className="font-semibold text-lg mb-1">
+                                <h3 className="font-semibold text-lg sm:text-xl mb-1">
                                     {service.title}
                                 </h3>
-                                <p className="text-sm text-gray-600">
+                                <p className="text-sm sm:text-base text-gray-600">
                                     {service.description}
                                 </p>
                             </div>
@@ -57,6 +64,7 @@ function services() {
                     ))}
                 </div>
             </div>
+
         </div>
     )
 }
