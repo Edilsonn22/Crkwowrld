@@ -39,9 +39,9 @@ const produtctsData = [
 function Intro() {
     return (
         <div className="p-10 mt-5">
-            {/*<div className="max-w-4xl mx-auto text-center p-4">
+            <div className="max-w-4xl mx-auto text-center p-4">
                 <p className="md:text-xl p-4 text-gray-500 font-semibold mb-10 max-w-4xl mx-auto font-merriweather">Mais do que roupas, somos atitude e autenticidade. Para mentes que pensam diferente e vivem sem limites. Cada peça conta uma história, cada design carrega uma mensagem.</p>
-            </div>*/}
+            </div>
             <div className=" flex items-center gap-8">
                 <div className="border-t-4 border-black w-full"></div>
                 <h3 className="text-xl font-bold text-center uppercase">Destaques</h3>
@@ -49,14 +49,7 @@ function Intro() {
             </div>
 
             <div className="p-4 ">
-                <div className="
-        grid 
-        grid-cols-1 
-        md:grid-cols-3 
-        gap-4 
-        p-2 
-        rounded-xl
-    ">
+                <div className=" grid grid-cols-1 md:grid-cols-3 gap-4 p-2 rounded-xl">
 
                     <div className="col-span-1 md:col-span-2">
                         <img
