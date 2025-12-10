@@ -47,7 +47,7 @@ function services() {
                     {ServicesData.map((service) => (
                         <div key={service.id} className="flex items-start gap-3 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
                             {/* Ícone */}
-                            <div className="text-3xl sm:text-4xl text-primary">
+                            <div className="text-3xl sm:text-4xl text-primary text-black">
                                 {service.icon}
                             </div>
 
