@@ -10,7 +10,7 @@ function Hero() {
 
                 <div className="absolute left-1/2 -translate-x-1/2 top-1/50 text-center ">
                     <h1 className="text-5xl md:text-6xl font-serif text-white pt-40 py-9">CRK WORLD BRAND!</h1>
-                    <h2 className="text-3xl font-bold md:text-4xl p-2 mb-4 text-gradient2 text-color[#020024]">Sua Mente, Seu Mundo. Não se encaixe, Destaque-se.</h2>
+                    <h2 className="text-3xl font-light md:text-4xl p-2 mb-4 text-gradient2 text-color[#020024]">Sua Mente, Seu Mundo. Não se encaixe, Destaque-se.</h2>
 
                     <button className="border border-white px-8 py-3 mt-25 text-white hover:bg-black/35 hover:text-black transition-colors duration-300 tracking-widest uppercase">Ver Catálogo</button>
                 </div>
