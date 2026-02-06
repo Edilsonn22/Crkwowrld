@@ -1,0 +1,41 @@
+
+
+function Catalog() {
+    return (
+      <div className="p-10 -mt-6">
+            <div className="flex items-center gap-4 md:gap-8 px-">
+                <h2 className="text-xl md:text-xl font-bold tracking-widest whitespace-nowrap uppercase text-black">Top Produtos</h2>
+                <div className="border-t-4 border-black w-full flex"></div>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4">
+                {produtctsData.map((item) => (
+                    <div
+                        key={item.id}
+                        className="bg-white rounded-xl shadow-md hover:shadow-xl/35 transition-shadow duration-400 p-4 cursor-pointer"
+                        data-aos="fade-up"
+                        data-aos-delay={item.aosDelay}
+                    >
+                        <img
+                            src={item.img}
+                            alt={item.name}
+                            className="h-56 w-full object-cover rounded-lg"
+                        />
+
+                        <h3 className="mt-3 font-seamibold text-lg text-black">{item.name}</h3>
+                        <p className="text-gray-600 text-sm">{item.color}</p>
+
+                        <p className="text-gray-500 mt-2 text-sm">{item.description}</p>
+
+                        <div className="mt-2 font-semibold text-black">⭐ {item.ratting}</div>
+
+                        <button className="bg-[#868f89] font-semibold rounded-lg px-6 py-2 text-black mt-4 w-full hover:bg-gray-800 transition-all">
+                            Comprar agora
+                        </button>
+                    </div>
+
+                ))}
+            </div>
+        </div>
+    );
+}
+export default Catalog;

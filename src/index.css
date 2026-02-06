@@ -12,6 +12,7 @@
             color:#000;
             background-color: #fff;
             font-family: "Inter", sans-serif;
+            scroll-behavior: smooth;
             
         }
 
@@ -21,6 +22,7 @@
 
         html{
             scroll-behavior: smooth;
+            overflow-y: scroll;
         }
     
         @layer utilities {

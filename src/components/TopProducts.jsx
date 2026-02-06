@@ -76,11 +76,11 @@ const produtctsData = [
 function TopProducts() {
     return (
         <div className="p-10 -mt-6">
-            <div className="flex items-center gap-4 md:gap-8 px-4">
+            <div className="flex items-center gap-4 md:gap-8 px-">
                 <h2 className="text-xl md:text-xl font-bold tracking-widest whitespace-nowrap uppercase text-black">Top Produtos</h2>
                 <div className="border-t-4 border-black w-full flex"></div>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 p-4">
                 {produtctsData.map((item) => (
                     <div
                         key={item.id}

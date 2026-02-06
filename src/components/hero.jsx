@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 
 function Hero() {
@@ -5,14 +6,15 @@ function Hero() {
         <section className=" relative h-screen overflow-hidden bg-black">
             <div className="relative inset-0 top bottom-0 z-0 w-full h-full">
                 <img src="/img/Projectcrk.png" alt="Hero Image" className="absolute w-full h-full object-cover opacity-90 brightness-90" />
-                <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90">
+                <div className="absolute inset-0 bg-linear-to-b from-black/60 via-transparent to-black/90">
                 </div>
 
                 <div className="absolute left-1/2 -translate-x-1/2 top-1/50 text-center ">
                     <h1 className="text-5xl md:text-6xl font-serif text-white pt-40 py-9">CRK WORLD BRAND!</h1>
-                    <h2 className="text-3xl font-light md:text-4xl p-2 mb-4 text-gradient2 text-color[#020024]">Sua Mente, Seu Mundo. Não se encaixe, Destaque-se.</h2>
-
-                    <button className="border border-white px-8 py-3 mt-25 text-white hover:bg-black/35 hover:text-black transition-colors duration-300 tracking-widest uppercase">Ver Catálogo</button>
+                    <h2 className="text-2xl font-light md:text-4xl p-2 mb-4 text-gradient2 text-color[#020024]">Sua Mente, Seu Mundo. Não se encaixe, Destaque-se.</h2>
+                    <Link to="/ver catalogo">
+                        <button className=" border border-white px-8 py-3 mt-25 text-white hover:bg-black/35 hover:text-black transition-colors duration-300 tracking-widest uppercase">Ver Catálogo</button>
+                    </Link>
                 </div>
 
             </div>
